@@ -1,3 +1,3 @@
-import { Login } from './Pages'
+import { Login, Register } from './Pages'
 
-export { Login }
+export { Login, Register }

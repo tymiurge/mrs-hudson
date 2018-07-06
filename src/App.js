@@ -6,7 +6,7 @@ import 'flag-icon-css/css/flag-icon.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'simple-line-icons/css/simple-line-icons.css';
 import './scss/style.css'
-import { Login } from './views'
+import { Login, Register } from './views'
 
 class App extends Component {
   render() {
@@ -14,6 +14,7 @@ class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route exact path="/login" name="Login Page" component={Login} />
+          <Route path="/register" name="Register Page" component={Register} />
         </Switch>
       </BrowserRouter>
     );
