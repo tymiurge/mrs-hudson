@@ -1,5 +1,3 @@
 import { Login } from './Pages'
 
-export {
-    Login
-}
+export { Login }

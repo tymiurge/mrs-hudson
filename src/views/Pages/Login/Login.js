@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { 
   Button, 
   Card, 
@@ -11,7 +11,7 @@ import {
   InputGroupAddon, 
   InputGroupText, 
   Row 
-} from 'reactstrap';
+} from 'reactstrap'
 
 class Login extends Component {
   render() {
@@ -66,7 +66,7 @@ class Login extends Component {
           </Row>
         </Container>
       </div>
-    );
+    )
   }
 }
 
