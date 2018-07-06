@@ -1,5 +1,17 @@
 import React, { Component } from 'react';
-import { Button, Card, CardBody, CardGroup, Col, Container, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
+import { 
+  Button, 
+  Card, 
+  CardBody, 
+  CardGroup, 
+  Col, 
+  Container, 
+  Input, 
+  InputGroup, 
+  InputGroupAddon, 
+  InputGroupText, 
+  Row 
+} from 'reactstrap';
 
 class Login extends Component {
   render() {
@@ -58,4 +70,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default Login
