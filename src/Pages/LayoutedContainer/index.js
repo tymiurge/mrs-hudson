@@ -31,6 +31,8 @@ export default class LayoutedContainer extends React.Component {
                         <AppSidebarFooter />
                         <AppSidebarMinimizer />
                     </AppSidebar>
+                    <main className="main">
+                    </main>
                 </div>
             </div>
         )

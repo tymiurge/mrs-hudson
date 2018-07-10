@@ -14,8 +14,8 @@ class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route exact path="/login" name="Login Page" component={Login} />
-          <Route path="/register" name="Register Page" component={Register} />
-          <Route path="/home" name="Home" component={LayoutedContainer} />
+          <Route exact path="/register" name="Register Page" component={Register} />
+          <Route path="/" name="Home" component={LayoutedContainer} />
         </Switch>
       </BrowserRouter>
     );
