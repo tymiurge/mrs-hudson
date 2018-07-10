@@ -1,6 +1,6 @@
 import React from 'react'
 import { Badge, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink } from 'reactstrap'
-import { AppAsideToggler, AppHeaderDropdown, AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
+import { AppHeaderDropdown } from '@coreui/react';
 
 const HeaderNotifications = props => (
     <Nav className="ml-auto" navbar>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Badge, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink } from 'reactstrap'
+import { Nav, NavItem, NavLink } from 'reactstrap'
 
 const HeaderMenu = props => (
     <Nav className="d-md-down-none" navbar>
