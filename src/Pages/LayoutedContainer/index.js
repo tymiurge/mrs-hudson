@@ -12,13 +12,9 @@ import {
     AppSidebarHeader,
     AppSidebarMinimizer,
     AppSidebarNav,
-  } from '@coreui/react'
-
-  import Header from './Header'
-
-
-
-
+} from '@coreui/react'
+import navigationConfig from './../../navigationConfig'
+import Header from './Header'
 
 export default class LayoutedContainer extends React.Component {
     render() {
@@ -27,6 +23,15 @@ export default class LayoutedContainer extends React.Component {
                 <AppHeader fixed>
                     <Header />
                 </AppHeader>
+                <div className="app-body">
+                    <AppSidebar fixed display="lg">
+                        <AppSidebarHeader />
+                        <AppSidebarForm />
+                        <AppSidebarNav navConfig={navigationConfig} {...this.props} />
+                        <AppSidebarFooter />
+                        <AppSidebarMinimizer />
+                    </AppSidebar>
+                </div>
             </div>
         )
     }
