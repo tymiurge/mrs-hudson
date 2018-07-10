@@ -17,9 +17,9 @@ const Clients = Loadable({
 })
 
 const routes = [
-    { path: '/', exact: true, name: 'Home', component: DefaultLayout },
+    { path: '/', exact: true, name: 'Home', component: LayoutedContainer },
     { path: '/home', name: 'Home', component: Home },
-    { path: '/clients', name: 'Clients', component: Home },
+    { path: '/clients', name: 'Clients', component: Clients },
 ]
 
 export default routes
