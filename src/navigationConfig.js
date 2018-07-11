@@ -10,7 +10,7 @@ export default {
             name: 'Clients',
             icon: 'icon-notebook'
         },
-        /*
+        
         {
             url: '/masters',
             name: 'Masters',
@@ -31,6 +31,5 @@ export default {
             name: 'Shedules',
             icon: 'icon-clock'
         },
-        */
     ]
 }
