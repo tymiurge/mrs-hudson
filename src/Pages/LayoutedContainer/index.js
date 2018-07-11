@@ -16,6 +16,7 @@ import {
 import navigationConfig from './../../navigationConfig'
 import routesConfig from './../../routes'
 import Header from './Header'
+import RightAside from './RightAside'
 
 export default class LayoutedContainer extends React.Component {
     render() {
@@ -54,6 +55,9 @@ export default class LayoutedContainer extends React.Component {
                             </Switch>
                         </Container>
                     </main>
+                    <AppAside fixed hidden>
+                        <RightAside />
+                    </AppAside>
                 </div>
             </div>
         )
