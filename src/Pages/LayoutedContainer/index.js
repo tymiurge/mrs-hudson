@@ -35,7 +35,12 @@ export default class LayoutedContainer extends React.Component {
                         <AppSidebarMinimizer />
                     </AppSidebar>
                     <main className="main">
-                        <AppBreadcrumb appRoutes={routesConfig}/>
+                        {
+                            /*
+                            <AppBreadcrumb appRoutes={routesConfig} fixed={true} />
+                            */
+                        }
+                        
                         <Container fluid>
                             <Switch>
                                 {routesConfig.map((route, idx) => {
@@ -60,7 +65,7 @@ export default class LayoutedContainer extends React.Component {
                         <RightAside />
                     </AppAside>
                 </div>
-                <AppFooter>
+                <AppFooter fixed>
                     <Footer />
                 </AppFooter>
             </div>

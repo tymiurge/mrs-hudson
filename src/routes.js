@@ -46,5 +46,4 @@ const routes = [
     { path: '/schedules', name: 'Schedules', component: Schedules },
 ]
 
-
 export default routes
