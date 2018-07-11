@@ -3,7 +3,6 @@ import { Redirect, Route, Switch } from 'react-router-dom'
 import { Container } from 'reactstrap'
 import {
     AppAside,
-    AppBreadcrumb,
     AppFooter,
     AppHeader,
     AppSidebar,
@@ -35,12 +34,6 @@ export default class LayoutedContainer extends React.Component {
                         <AppSidebarMinimizer />
                     </AppSidebar>
                     <main className="main">
-                        {
-                            /*
-                            <AppBreadcrumb appRoutes={routesConfig} fixed={true} />
-                            */
-                        }
-                        
                         <Container fluid>
                             <Switch>
                                 {routesConfig.map((route, idx) => {
