@@ -23,11 +23,20 @@ class Toolbar extends React.Component {
     inputValue: '',
   }
 
+  switchToButtonsState = () => this.setState(
+    {
+      ...this.state,
+      buttonsState: false,
+      inputValue: ''
+    },
+    () => this.onSearchChange('')
+  )
+
   toggleToolbarState = () => this.setState({...this.state, buttonsState: !this.state.buttonsState})
 
   onSearchChange = newValue => this.setState(
     {...this.state, inputValue: newValue},
-    this.props.onSearchChange(newValue)
+    () => this.props.onSearchChange(newValue)
   )
 
   renderButtonsState = () => (
@@ -45,7 +54,7 @@ class Toolbar extends React.Component {
     <InputGroup>
       <InputGroupAddon addonType="prepend">
         <InputGroupText>
-          <i className="fa fa-user"></i>
+          <i className="fa fa-search"></i>
         </InputGroupText>
       </InputGroupAddon>
       <Input
@@ -55,7 +64,7 @@ class Toolbar extends React.Component {
         onChange={ e => this.onSearchChange(e.target.value) }
       />
       <InputGroupAddon addonType="append">
-        <Button type="button" color="danger" onClick={ () => this.toggleToolbarState() }>
+        <Button type="button" color="danger" onClick={ () => this.switchToButtonsState() }>
           <i className="fa fa-times"></i>
         </Button>
       </InputGroupAddon>
