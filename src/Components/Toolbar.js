@@ -14,7 +14,7 @@ class Toolbar extends React.Component {
     onSearchChange: PropTypes.func
   }
 
-  defaultProps = {
+  static defaultProps = {
     onSearchChange: () => {}
   }
 
