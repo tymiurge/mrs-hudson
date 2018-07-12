@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {
   InputGroup,
   InputGroupAddon,
@@ -9,11 +10,25 @@ import {
 
 class Toolbar extends React.Component {
 
+  static propTypes = {
+    onSearchChange: PropTypes.func
+  }
+
+  defaultProps = {
+    onSearchChange: () => {}
+  }
+
   state = {
-    buttonsState: true
+    buttonsState: true,
+    inputValue: '',
   }
 
   toggleToolbarState = () => this.setState({...this.state, buttonsState: !this.state.buttonsState})
+
+  onSearchChange = newValue => this.setState(
+    {...this.state, inputValue: newValue},
+    this.props.onSearchChange(newValue)
+  )
 
   renderButtonsState = () => (
     <React.Fragment>
@@ -33,7 +48,12 @@ class Toolbar extends React.Component {
           <i className="fa fa-user"></i>
         </InputGroupText>
       </InputGroupAddon>
-      <Input type="text" placeholder="Search" />
+      <Input
+        type="text"
+        placeholder="Search"
+        value={this.state.inputValue}
+        onChange={ e => this.onSearchChange(e.target.value) }
+      />
       <InputGroupAddon addonType="append">
         <Button type="button" color="danger" onClick={ () => this.toggleToolbarState() }>
           <i className="fa fa-times"></i>
