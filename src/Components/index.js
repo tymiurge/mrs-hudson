@@ -1,3 +1,4 @@
 import Toolbar from './Toolbar'
+import PageContainer from './PageContainer'
 
-export { Toolbar }
+export { Toolbar, PageContainer }
