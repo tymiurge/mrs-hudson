@@ -5,7 +5,7 @@ const Avatar = props => (
         display: 'flex',
         justifyContent: 'center'
     }}>
-        <img src={props.src} width={props.width || 150} />
+        <img src={props.src} width={props.width || 150} alt='master' />
     </div>
 )
 

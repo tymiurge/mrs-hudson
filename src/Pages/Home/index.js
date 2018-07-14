@@ -1,6 +1,6 @@
 import React from 'react'
 import { Toolbar } from './../../Components'
-import { Badge, Card, CardBody, CardHeader, Col, Pagination, PaginationItem, PaginationLink, Row, Table } from 'reactstrap'
+import { Badge, Card, CardBody, CardHeader, Pagination, PaginationItem, PaginationLink, Table } from 'reactstrap'
 
 const Home = props => (<div>
     <Toolbar />

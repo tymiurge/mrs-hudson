@@ -1,9 +1,9 @@
 import React from 'react'
-import { CardGroup, Row, Col, Card, CardHeader, CardBody } from 'reactstrap'
+import { CardGroup, Card, CardHeader } from 'reactstrap'
 import AvatarWizard from './AvatarWizard'
 
 const Masters = props => (
-    
+
     <CardGroup>
         <AvatarWizard />
         <Card>
