@@ -1,5 +1,5 @@
 import React from 'react'
-import { Badge, Card, CardBody, CardHeader, CardFooter, Button, Col, Pagination, PaginationItem, PaginationLink, Row, Table } from 'reactstrap'
+import { Card, CardBody, CardHeader, CardFooter, Button, Table } from 'reactstrap'
 import PropTypes from 'prop-types'
 
 const data = [

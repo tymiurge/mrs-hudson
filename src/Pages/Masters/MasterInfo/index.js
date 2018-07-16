@@ -1,6 +1,4 @@
 import React from 'react'
-import { Button, Card, CardHeader, CardBody, CardFooter, Form } from 'reactstrap'
-import { FormItems } from 'components'
 import StaticMode from './StaticMode'
 import EditMode from './EditMode'
 
