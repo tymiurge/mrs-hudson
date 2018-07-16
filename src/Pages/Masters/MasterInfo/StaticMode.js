@@ -1,61 +1,49 @@
 import React from 'react'
-import { Badge, Card, CardBody, CardHeader, Col, Pagination, PaginationItem, PaginationLink, Row, Table } from 'reactstrap'
+import { Badge, Card, CardBody, CardHeader, CardFooter, Button, Col, Pagination, PaginationItem, PaginationLink, Row, Table } from 'reactstrap'
+import PropTypes from 'prop-types'
+
+const data = [
+  {field: 'Username', value: 'shrek'},
+  {field: 'Mail', value: 'shrek@try2myt.com'},
+  {field: 'Phone', value: '095591191191'},
+  {field: 'Experience', value: '2 years'},
+]
 
 class StaticMode extends React.Component {
-    render() {
+
+  static propTypes = {
+    data: PropTypes.array.isRequired,
+    onEditClick: PropTypes.func.isRequired
+  }
+
+  renderData = () => data.map(item => (
+    <tr key={`${item.field}_${item.value}`}>
+      <th>{item.field}</th>
+      <td>{item.value}</td>
+    </tr>
+  ))
+
+  render() {
         return (
-            <Table responsive size="sm">
-                  <thead>
-                  <tr>
-                    <th>Username</th>
-                    <th>Date registered</th>
-                    <th>Role</th>
-                    <th>Status</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>Carwyn Fachtna</td>
-                    <td>2012/01/01</td>
-                    <td>Member</td>
-                    <td>
-                      <Badge color="success">Active</Badge>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Nehemiah Tatius</td>
-                    <td>2012/02/01</td>
-                    <td>Staff</td>
-                    <td>
-                      <Badge color="danger">Banned</Badge>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Ebbe Gemariah</td>
-                    <td>2012/02/01</td>
-                    <td>Admin</td>
-                    <td>
-                      <Badge color="secondary">Inactive</Badge>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Eustorgios Amulius</td>
-                    <td>2012/03/01</td>
-                    <td>Member</td>
-                    <td>
-                      <Badge color="warning">Pending</Badge>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Leopold Gáspár</td>
-                    <td>2012/01/21</td>
-                    <td>Staff</td>
-                    <td>
-                      <Badge color="success">Active</Badge>
-                    </td>
-                  </tr>
-                  </tbody>
-                </Table>
+          <Card>
+                <CardHeader>Info</CardHeader>
+                <CardBody>
+                  <Table responsive size="sm">
+                    <tbody>
+                      { this.renderData() }
+                    </tbody>
+                  </Table>
+                </CardBody>
+                <CardFooter>
+                  <Button 
+                    size="sm" 
+                    color="success"
+                    onClick={ () => this.props.onEditClick() }
+                  >
+                    <i className="fa fa-pencil"></i> Edit
+                  </Button>
+                </CardFooter>
+            </Card>
         )
     }
 }

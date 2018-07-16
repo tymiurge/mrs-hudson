@@ -1,30 +1,28 @@
 import React from 'react'
 import { Button, Card, CardHeader, CardBody, CardFooter, Form } from 'reactstrap'
-import { FormItems } from 'Components'
+import { FormItems } from 'components'
 import StaticMode from './StaticMode'
+import EditMode from './EditMode'
 
-
+const data = [
+    {field: 'Username', value: 'shrek'},
+    {field: 'Mail', value: 'shrek@try2myt.com'},
+    {field: 'Phone', value: '095591191191'},
+    {field: 'Experience', value: '2 years'},
+  ]
 
 class MasterInfo extends React.Component {
+    state = {
+        staticMode: true
+    }
+
+    toggleMode = () => this.setState({...this.state, staticMode: !this.state.staticMode})
+
     render() {
-        return (
-            <Card>
-                <CardHeader>Info</CardHeader>
-                <CardBody>
-                  <Form action="" method="post" className="form-horizontal">
-                    <FormItems.LeftIconInput iconName='fa-user' placeholder='Username' />
-                    <FormItems.LeftIconInput iconName='fa-envelope' placeholder='Email' />
-                    <FormItems.LeftIconInput iconName='fa-phone' placeholder='Phone' />
-                    <FormItems.DateYMSelector title='In industry from' />
-                  </Form>
-                </CardBody>
-               
-                <CardFooter>
-                  <Button type="submit" size="sm" color="success"><i className="fa fa-dot-circle-o"></i> Submit</Button>
-                  <Button type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reset</Button>
-                </CardFooter>
-            </Card>
-        )
+        const { staticMode } = this.state
+        return staticMode
+            ? (<StaticMode data={data} onEditClick={ () => this.toggleMode() } />)
+            : (<EditMode onResetClick={ () => this.toggleMode() }/>)
     }
 }
 
