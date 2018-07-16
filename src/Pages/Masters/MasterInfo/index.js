@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Card, CardHeader, CardBody, CardFooter, Form } from 'reactstrap'
-import { FormItems } from './../../Components'
-import StaticMode from './Modes/StaticMode'
+import { FormItems } from 'Components'
+import StaticMode from './StaticMode'
 
 
 
