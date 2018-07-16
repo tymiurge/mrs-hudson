@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Card, CardHeader, CardBody, CardFooter, Form, FormGroup, Col, InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap'
+import _PrependedInput from './_PrependedInput'
 
 const LeftIconInput = props => {
     const iconName = props.iconName || 'fa-question-circle'
@@ -7,14 +8,7 @@ const LeftIconInput = props => {
     return (
         <FormGroup row>
             <Col md='12'>
-                <InputGroup>
-                <InputGroupAddon addonType='prepend'>
-                    <InputGroupText>
-                    <i className={`fa ${iconName}`}></i>
-                    </InputGroupText>
-                </InputGroupAddon>
-                <Input type="text" name='input1-group1' placeholder={placeholder} />
-                </InputGroup>
+                <_PrependedInput {...props} />
             </Col>
         </FormGroup>
     )
