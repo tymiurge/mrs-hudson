@@ -1,7 +1,7 @@
 import React from 'react'
-import { Button, Card, Row, CardHeader, Label, CardBody, CardFooter, Form, FormGroup, Col, InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap'
+import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap'
 
-const _PrependedInput = props => (
+const PrependedInput = props => (
     <InputGroup> 
         <InputGroupAddon addonType='prepend'>
             <InputGroupText>
@@ -12,4 +12,4 @@ const _PrependedInput = props => (
     </InputGroup>    
 )
 
-export default _PrependedInput
+export default PrependedInput

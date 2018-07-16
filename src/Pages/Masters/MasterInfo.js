@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card, Row, CardHeader, Label, CardBody, CardFooter, Form, FormGroup, Col, InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap'
+import { Button, Card, CardHeader, CardBody, CardFooter, Form } from 'reactstrap'
 import { FormItems } from './../../Components'
 
 class MasterInfo extends React.Component {
