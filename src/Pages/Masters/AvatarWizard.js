@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardHeader, CardBody } from 'reactstrap'
+import { Card, CardHeader, CardBody, CardFooter } from 'reactstrap'
 import { Avatar } from './../../Components'
 import noavatar from './../../assets/no-avatar.png'
 
@@ -12,14 +12,17 @@ class AvatarWizard extends React.Component {
                 <CardHeader>
                     Avatar
                 </CardHeader>
-                <Avatar src={noavatar} />
+                
                 <CardBody>
+                    <Avatar src={noavatar} />    
+                </CardBody>
+                <CardFooter>
                     {/*
                         TODO: change the input type='file' look, doc bellow 
                         https://dev.to/greduan/the-anatomy-of-a-custom-inputtypefile-component
                     */}
                     <input type="file" />
-                </CardBody>
+                </CardFooter>
             </Card>
         )
     }
