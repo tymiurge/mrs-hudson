@@ -1,14 +1,13 @@
 import React from 'react'
 import { CardGroup, Card, CardHeader } from 'reactstrap'
 import AvatarWizard from './AvatarWizard'
+import MasterInfo from './MasterInfo'
 
 const Masters = props => (
 
     <CardGroup>
         <AvatarWizard />
-        <Card>
-            <CardHeader>Info</CardHeader>
-        </Card>
+        <MasterInfo />
         <Card>
             <CardHeader>Certificates</CardHeader>
         </Card>
