@@ -20,8 +20,8 @@ const PerformanceInfo = props => (
 
                 <Label style={{marginTop: '10px'}}>Certificated by:</Label>
                 <div>
-                    <img src={brands.artnaturals} width={75} />
-                    <img src={brands.loreal} width={75} style={{marginLeft: '10px'}}/>
+                    <img src={brands.artnaturals} alt={''} width={75} />
+                    <img src={brands.loreal} alt={''} width={75} style={{marginLeft: '10px'}}/>
                 </div>
 
             </CardBody>
