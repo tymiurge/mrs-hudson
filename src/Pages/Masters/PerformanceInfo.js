@@ -11,8 +11,8 @@ const PerformanceInfo = props => (
                 <Label>Clients rating:</Label>
                 <div>
                 <Rating
-                    emptySymbol='fa fa-star-o fa-2x'
-                    fullSymbol='fa fa-star fa-2x'
+                    emptySymbol='fa fa-star-o'
+                    fullSymbol='fa fa-star'
                     initialRating={4}
                     readonly={true}
                 />
