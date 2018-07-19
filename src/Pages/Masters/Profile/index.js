@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardGroup, Card, CardHeader, CardFooter, CardBody } from 'reactstrap'
+import { CardGroup } from 'reactstrap'
 import AvatarWizard from './AvatarWizard'
 import MasterInfo from './MasterInfo'
 import PerformanceInfo from './PerformanceInfo'

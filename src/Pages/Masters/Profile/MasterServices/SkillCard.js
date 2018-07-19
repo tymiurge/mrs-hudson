@@ -1,6 +1,14 @@
 import React from 'react'
-import { Card, CardHeader, CardFooter, CardBody, Button, ButtonGroup, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Table, Row, Col } from 'reactstrap'
-import { Bar, Line } from 'react-chartjs-2';
+import { 
+  Card, 
+  CardBody, 
+  ButtonGroup, 
+  Dropdown, 
+  DropdownToggle, 
+  DropdownMenu, 
+  DropdownItem, 
+} from 'reactstrap'
+import { Line } from 'react-chartjs-2';
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 import PropTypes from 'prop-types'
 

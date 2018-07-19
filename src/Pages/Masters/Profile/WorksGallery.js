@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardGroup, Card, CardHeader, CardFooter, CardBody } from 'reactstrap'
+import { Card, CardHeader, CardFooter, CardBody } from 'reactstrap'
 import { gallery } from 'assets'
 
 const WorksGallery = props => (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardGroup, Card, CardHeader, CardFooter, CardBody, Button, Table, Row, Col } from 'reactstrap'
+import { Card, CardHeader, CardFooter, CardBody, Button, Row, Col } from 'reactstrap'
 import SkillCard from './SkillCard'
 
 const MasterServices = props => (
