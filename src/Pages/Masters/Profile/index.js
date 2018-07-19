@@ -4,6 +4,7 @@ import AvatarWizard from './AvatarWizard'
 import MasterInfo from './MasterInfo'
 import PerformanceInfo from './PerformanceInfo'
 import WorksGallery from './WorksGallery'
+import MasterServices from './MasterServices'
 
 const MasterProfile = props => (
     <React.Fragment>
@@ -12,6 +13,7 @@ const MasterProfile = props => (
             <MasterInfo />
             <PerformanceInfo />
         </CardGroup>
+        <MasterServices />
         <WorksGallery />
     </React.Fragment>
         
