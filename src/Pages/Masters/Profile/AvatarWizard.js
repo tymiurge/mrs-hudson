@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, CardHeader, CardBody, CardFooter } from 'reactstrap'
-import { Avatar } from './../../Components'
-import noavatar from './../../assets/no-avatar.png'
+import { Avatar } from 'components'
+import { noavatar } from 'assets'
 
 class AvatarWizard extends React.Component {
 
