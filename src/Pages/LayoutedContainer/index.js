@@ -58,9 +58,11 @@ export default class LayoutedContainer extends React.Component {
                         <RightAside />
                     </AppAside>
                 </div>
+                {/*
                 <AppFooter fixed>
                     <Footer />
                 </AppFooter>
+                */}
             </div>
         )
     }
