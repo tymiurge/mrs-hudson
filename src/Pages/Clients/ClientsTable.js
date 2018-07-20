@@ -13,17 +13,17 @@ class ClientsTable extends React.Component {
 
     renderRows = () => this.props.data.map( (client, idx) => (
         <tr key={`_clients_table_row_${client.name}_${idx}`}>
-            <th>{client.id}</th>
-            <th>{client.name}</th>
-            <th>{client.phone}</th>
-            <th>{unixtimeToString(client.lastVisit)}</th>
-            <th>{unixtimeToString(client.nextVisit)}</th>
+            <td>{client.id}</td>
+            <td>{client.name}</td>
+            <td>{client.phone}</td>
+            <td>{unixtimeToString(client.lastVisit)}</td>
+            <td>{unixtimeToString(client.nextVisit)}</td>
         </tr>
     ))
 
     render() {
         return (
-            <Table hover bordered striped responsive size="sm">
+            <Table hover bordered responsive size="sm">
                 <thead>
                     <tr>
                         <th>id</th>
