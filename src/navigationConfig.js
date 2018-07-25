@@ -6,6 +6,11 @@ export default {
             icon: 'icon-speedometer'
         },
         {
+            name: 'Salon',
+            url: '/salon',
+            icon: 'icon-briefcase'
+        },
+        {
             url: '/clients',
             name: 'Clients',
             icon: 'icon-notebook'
@@ -29,7 +34,7 @@ export default {
         {
             url: '/schedules',
             name: 'Shedules',
-            icon: 'icon-clock'
+            icon: 'icon-calendar'
         },
     ]
 }

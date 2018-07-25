@@ -36,6 +36,11 @@ const Schedules = Loadable({
     loading: Loading
 })
 
+const SalonProfile = Loadable({
+    loader: () => import('./Pages/Salon'),
+    loading: Loading
+})
+
 const routes = [
     { path: '/', exact: true, name: 'Home', component: LayoutedContainer },
     { path: '/home', name: 'Home', component: Home },
@@ -44,6 +49,7 @@ const routes = [
     { path: '/materials', name: 'Materials', component: Materials },
     { path: '/services', name: 'Services', component: Services },
     { path: '/schedules', name: 'Schedules', component: Schedules },
+    { path: '/salon', name: 'Salon Profile', component: SalonProfile },
 ]
 
 export default routes

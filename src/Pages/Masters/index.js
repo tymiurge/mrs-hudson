@@ -3,8 +3,8 @@ import MasterProfile from './Profile'
 import MastersList from './List'
 
 const Masters = props => (
-    //<MasterProfile />
-    <MastersList />
+    <MasterProfile />
+    //<MastersList />
 )
 
 export default Masters
