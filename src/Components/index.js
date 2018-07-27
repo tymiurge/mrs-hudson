@@ -6,10 +6,20 @@ import LeftIconInput from './FormItems/LeftIconInput'
 import DateYMSelector from './FormItems/DateYMSelector'
 import PhotoHolder from './PhotoHolder'
 import HorizontalDelimiter from './HorizontalDelimiter'
+import VerticalDelimiter from './VerticalDelimiter'
 
 const FormItems = {
     LeftIconInput,
     DateYMSelector
 }
 
-export { Toolbar, PageContainer, PageFooter, Avatar, FormItems, PhotoHolder, HorizontalDelimiter }
+export { 
+    Toolbar, 
+    PageContainer, 
+    PageFooter, 
+    Avatar, 
+    FormItems, 
+    PhotoHolder, 
+    HorizontalDelimiter, 
+    VerticalDelimiter 
+}
