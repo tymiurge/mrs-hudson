@@ -4,10 +4,11 @@ import PageFooter from './PageFooter'
 import Avatar from './Avatar'
 import LeftIconInput from './FormItems/LeftIconInput'
 import DateYMSelector from './FormItems/DateYMSelector'
+import PhotoHolder from './PhotoHolder'
 
 const FormItems = {
     LeftIconInput,
     DateYMSelector
 }
 
-export { Toolbar, PageContainer, PageFooter, Avatar, FormItems }
+export { Toolbar, PageContainer, PageFooter, Avatar, FormItems, PhotoHolder }
