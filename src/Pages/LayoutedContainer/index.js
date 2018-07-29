@@ -3,7 +3,6 @@ import { Redirect, Route, Switch } from 'react-router-dom'
 import { Container } from 'reactstrap'
 import {
     AppAside,
-    AppFooter,
     AppHeader,
     AppSidebar,
     AppSidebarFooter,
@@ -15,7 +14,7 @@ import {
 import navigationConfig from './../../navigationConfig'
 import routesConfig from './../../routes'
 import Header from './Header'
-import Footer from './Footer'
+//import Footer from './Footer'
 import RightAside from './RightAside'
 
 export default class LayoutedContainer extends React.Component {

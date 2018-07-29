@@ -1,30 +1,10 @@
 import React from 'react'
 import { PhotoHolder, HorizontalDelimiter, VerticalDelimiter, FlexLaoyout } from 'components'
 import {
-    Badge,
     Button,
-    ButtonDropdown,
     Card,
     CardBody,
-    CardFooter,
     CardHeader,
-    Col,
-    Collapse,
-    DropdownItem,
-    DropdownMenu,
-    DropdownToggle,
-    Fade,
-    Form,
-    FormGroup,
-    FormText,
-    FormFeedback,
-    Input,
-    InputGroup,
-    InputGroupAddon,
-    InputGroupText,
-    Label,
-    Row,
-    Media
 } from 'reactstrap'
 
 class LogoWidget extends React.Component {

@@ -1,6 +1,5 @@
 import React from 'react'
-import { Button } from 'reactstrap'
-import { PageContainer, PageFooter, Toolbar } from 'components'
+import { PageContainer, Toolbar } from 'components'
 import { Card, CardBody, Table } from 'reactstrap'
 
 class MastersList extends React.Component {

@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 /**
  * left-to-right oriented flex row. flexWrap is set to 'wrap'
