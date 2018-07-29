@@ -1,33 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import * as hAlg from './hAlignmenting'
 
-const hAlignments = {
-    left: 'flex-start',
-    right: 'flex-end',
-    center: 'center'
-}
-
-const resolveHAlignment = hAlign => {
-    if (!hAlignments.hasOwnProperty(hAlign)) {
-        return `flex column does not support ${hAlign} value for the alignItems property`
-    }
-    return hAlignments[hAlign]
-} 
 /**
- * Flex right-to-left oriented column 
+ * Flex right-to-left oriented column. 
+ * Properties: 
+ *      hAlign: one of 
+ *          'center'    - will be transformed to alignItems: 'center'
+ *          'left'      - --//-- to alignItems: 'flex-start'
+ *          'right      - --//-- to alignItems: 'flex-end'
  */
 class Column extends React.Component {
 
-    static propTypes = {
-        hAlign: PropTypes.oneOf(['left', 'right', 'center'])
-    }
+    static propTypes = Object.assign(
+        {},
+        hAlg.hAlignmentPropTypes
+    )
 
-    static defaultProps = {
-        hAlign: 'center',
-    }
+    static defaultProps = Object.assign(
+        {},
+        hAlg.hAlignmentDefaultProps
+    )
 
     render() {
-        const _hAlign = resolveHAlignment(this.props.hAlign)
+        const _hAlign = hAlg.resolveHAlignment(this.props.hAlign)
         return (
             <div style={{
                 display: 'flex',
