@@ -8,6 +8,7 @@ import PhotoHolder from './PhotoHolder'
 import HorizontalDelimiter from './HorizontalDelimiter'
 import VerticalDelimiter from './VerticalDelimiter'
 import WrappedRow from './FlexLayout/WrappedRow'
+import Column from './FlexLayout/Column'
 
 const FormItems = {
     LeftIconInput,
@@ -15,7 +16,8 @@ const FormItems = {
 }
 
 const FlexLaoyout = {
-    WrappedRow
+    WrappedRow,
+    Column
 }
 
 export { 
